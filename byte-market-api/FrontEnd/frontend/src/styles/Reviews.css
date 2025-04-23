@@ -1,0 +1,236 @@
+.reviews-page {
+    background: #edf9fc;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.reviews-page .product-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.reviews-page .product-image-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.reviews-page .product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.reviews-page .product-details {
+    flex: 1;
+}
+
+.reviews-page .product-details h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    color: #333;
+}
+
+.reviews-page .average-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.reviews-page .star {
+    color: #ffd700;
+}
+
+.reviews-page .total-reviews {
+    color: #666;
+    font-size: 1rem;
+}
+
+.reviews-page .reviews-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.reviews-page .divider {
+    border: 0;
+    border-top: 4px solid #333;
+    margin: 2rem 0;
+}
+
+.reviews-page .reviews-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.reviews-page .review-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reviews-page .my-review {
+    border: 2px solid green;
+    background-color: #e6f7e6;
+}
+
+.reviews-page .review-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 1rem;
+}
+
+.reviews-page .reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reviews-page .reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.reviews-page .reviewer-details {
+    flex: 1;
+}
+
+.reviews-page .reviewer-name {
+    margin: 0;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.reviews-page .review-date {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.reviews-page .review-rating {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.reviews-page .review-text {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+    white-space: normal;      /* Changed from pre-wrap to normal */
+    overflow-wrap: break-word;
+    width: 100%;             /* Ensure text takes full width */
+    display: block;          /* Ensures block-level display */
+}
+
+.reviews-page .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.reviews-page .pagination-button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.reviews-page .pagination-button:disabled {
+    background: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.reviews-page .pagination-button:hover:not(:disabled) {
+    background: #f0f0f0;
+}
+
+.reviews-page .page-number {
+    font-size: 1rem;
+    color: #333;
+}
+
+.reviews-page .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.reviews-page .go-back-button {
+    background-color: #212850;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 4px;
+    color: white;
+}
+
+.reviews-page .go-back-button:hover {
+    background-color: #3e597f;
+}
+
+@media (max-width: 768px) {
+    .reviews-page {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .reviews-page .product-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-page .product-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .reviews-page .product-details {
+        text-align: center;
+    }
+
+    .reviews-page .average-rating {
+        justify-content: center;
+    }
+}
+    .reviews-page .reviewer-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }

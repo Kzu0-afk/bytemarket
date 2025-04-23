@@ -1,0 +1,394 @@
+/* StorePage.css */
+
+/* Container for the entire store page */
+.store-page-container {
+    max-width: 1200px;
+    margin: 1.6rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Store Information Section */
+.store-page-container .store-info-container {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.store-page-container .store-profile-image {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+.store-page-container .store-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.store-page-container .store-details {
+    flex: 1;
+}
+
+.store-page-container .store-details {
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.store-page-container .store-details h1 {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    margin: 0;
+    color: #333;
+}
+
+.store-page-container .store-rating {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    color: #ffd700;
+    margin: 0.4rem 0;
+}
+
+.store-page-container .store-description {
+    color: #666;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.store-page-container .chat-seller-btn {
+    background-color: #212850;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.store-page-container .chat-seller-btn:hover {
+    background-color: #29466c;
+}
+
+/* Store Selector Styles */
+.store-page-container .store-selector {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.store-page-container .store-selector label {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.store-page-container .store-selector select {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    max-width: 300px;
+}
+
+.store-page-container .store-selector select:hover {
+    border-color: #212850;
+}
+
+.store-page-container .store-selector select:focus {
+    outline: none;
+    border-color: #212850;
+    box-shadow: 0 0 0 2px rgba(41, 70, 108, 0.2);
+}
+
+/* Sort Buttons */
+.store-page-container .sort-buttons {
+    display: flex;
+    margin-bottom: 1.6rem;
+    justify-content: flex-end;
+}
+
+.store-page-container .sort-btn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transition effect */
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Make text bolder */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+}
+
+.store-page-container .sort-btn:hover {
+    background-color: #f9f9f9;
+}
+
+.store-page-container .sort-btn.active {
+    border-bottom: 3px solid; /* Blue bottom border for active state */
+    background-color: #fff;
+}
+
+/* Products Grid */
+.store-page-container .products-container {
+    padding: 1.6rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.store-page-container .no-products {
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    padding: 2rem;
+}
+
+.store-page-container .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.6rem;
+}
+
+/* Product Card */
+.store-page-container .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 380px;
+}
+
+.store-page-container .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.store-page-container .product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-page-container .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.store-page-container .product-details {
+    padding: 0.8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.store-page-container .product-title {
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    margin: 0 0 0.4rem 0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+}
+
+.store-page-container .product-title[title] {
+    cursor: help;
+}
+
+.store-page-container .product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFA500;
+    margin: 0.4rem 0;
+}
+
+.store-page-container .product-rating {
+    color: #ffd700;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    margin: 0.4rem 0;
+}
+
+/* Product Actions */
+.store-page-container .product-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: auto;
+}
+
+.store-page-container .buy-now-btn {
+    background-color: #212850;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.2s ease;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.store-page-container .buy-now-btn:hover {
+    background-color: #29466c;
+}
+
+.store-page-container .cart-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    transition: transform 0.2s ease;
+}
+
+.store-page-container .cart-btn:hover {
+    transform: scale(1.1);
+}
+
+.store-page-container .wishlist-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.store-page-container .wishlist-icon:hover {
+    transform: scale(1.1);
+}
+
+.store-page-container .wishlist-icon.wishlisted {
+    color: red;
+}
+
+/* Modals */
+.store-page-container .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.store-page-container .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.store-page-container .modal-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.store-page-container .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.store-page-container .cancel-btn,
+.store-page-container .confirm-btn {
+    width: 100px;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.store-page-container .cancel-btn {
+    background-color: #ff9c9c;
+}
+
+.store-page-container .cancel-btn:hover {
+    background-color: #febaba;
+}
+
+.store-page-container .confirm-btn {
+    background-color: #c7e3b1;
+}
+
+.store-page-container .confirm-btn:hover {
+    background-color: #a5d18c;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .store-page-container {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .store-page-container .store-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .store-page-container .sort-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .store-page-container .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .store-page-container .store-selector {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .store-page-container .store-selector select {
+        max-width: none;
+    }
+}

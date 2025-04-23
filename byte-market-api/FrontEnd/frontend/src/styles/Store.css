@@ -1,0 +1,284 @@
+/* Store Container */
+.stores-container {
+    max-width: 1200px;
+    margin: 1.6rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Store Information Section */
+.stores-container .store-info-container {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 1.6rem;
+    justify-content: space-between;
+}
+
+.stores-container .store-profile-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stores-container .store-profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stores-container .store-placeholder-image {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+.stores-container .store-profile-image input{
+
+}
+.stores-container .edit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stores-container .edit-image-btn {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+.stores-container .edit-image-btn:hover {
+  background-color: #f0f0f0;
+}
+.stores-container .store-details {
+    flex: 1;
+}
+
+.stores-container .store-details h1 {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+.stores-container .store-description {
+    color: #666;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Add Product Button */
+.stores-container .add-product-btn {
+    background-color: #212850;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.stores-container .add-product-btn:hover {
+    background-color: #29466c;
+}
+
+/* Products Container */
+.stores-container .products-container {
+    padding: 1.6rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stores-container .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.6rem;
+}
+
+/* Product Card */
+.stores-container .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 380px;
+}
+
+.stores-container .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.stores-container .product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stores-container .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product Details */
+.stores-container .product-details {
+    padding: 0.8rem;
+    flex: 1;
+    display: flex;
+    font-size: 0.8rem;
+    flex-direction: column;
+}
+
+.stores-container .product-title {
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 0.4rem 0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+}
+
+.stores-container .product-title[title] {
+    cursor: help;
+}
+
+.stores-container .product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #FFA500;
+    margin: 0.4rem 0;
+}
+
+/* Product Actions */
+.stores-container .product-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: auto;
+}
+
+.stores-container .edit-now-btn {
+    background-color: #212850;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stores-container .edit-now-btn:hover {
+    background-color: #29466c;
+}
+
+.stores-container .delete-btn {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50px;
+    flex-grow: 1;
+    transition: background-color 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stores-container .delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Loading State */
+.stores-container .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Modal Styles */
+.stores-container .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.stores-container .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stores-container  {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .stores-container .store-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stores-container .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .stores-container .product-card {
+        height: auto;
+        min-height: 350px;
+    }
+
+    .stores-container .add-product-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

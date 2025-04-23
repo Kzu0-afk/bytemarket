@@ -1,0 +1,367 @@
+/* Global Reset */
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+.containerLayout1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 5rem;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    height: 80px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.search-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo Styles */
+.logoAndName {
+    display: flex;
+    align-items: center;
+}
+
+.logoAndName h1 {
+    font-size: 1.2rem;
+}
+
+.logoAndName a {
+    cursor: pointer;
+}
+
+.logo {
+    width: 4vw;
+    min-width: 50px;
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Scale the logo to 110% on hover */
+}
+
+/* Search Bar Styles */
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.searchBar:focus-within {
+    border-color: #212850;
+    box-shadow: 0 0 0 1px rgba(33, 40, 80, 0.1);
+}
+
+.searchBar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    background: #f5f5f5;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.searchBar input::placeholder {
+    color: #888;
+}
+
+.searchIcon {
+    width: 16px;
+    height: 16px;
+    min-width: initial;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+    background: #29466c;
+}
+
+.searchButton {
+    background: #212850;
+    border: none;
+    padding: 0 1.5rem;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+    background: #29466c;
+}
+
+.clearButton {
+    background: transparent;
+    border: none;
+    color: #666;
+    padding: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.clearButton:hover {
+    color: #333;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Profile Bar Styles */
+.profileBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    transition: border-color 0.3s ease;
+}
+
+.profileBar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profileIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Profile Arrow Styles */
+.profileArrow {
+    width: 1.3vw;
+    height: 1.5vh;
+    min-width: 20px;
+    transition: transform 0.3s ease; /* Ensure transition applies to both states */
+}
+
+.profileArrow.open {
+    transform: rotate(180deg);
+}
+/* Dropdown Menu */
+.dropdown {
+    position: absolute;
+    top: 5rem;
+    right: 6.5rem; /* Moved the dropdown a bit to the left */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 15rem;
+    z-index: 1000;
+}
+
+.dropdownDivider {
+    border-top: 1px solid #e0e0e0;
+    margin: 0.5rem 0;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.dropdownItemLabel {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    color: #888;
+}
+
+.dropdownItem {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: #f0f0f0;
+}
+
+/* Wallet Button Styling */
+.wallet-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wallet-button img {
+    width: auto;
+    height: 4vh;
+    margin-right: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.wallet-button img:hover {
+    transform: scale(1.1);
+}
+
+/* Greeting Message */
+.greeting-message {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    color: #1f244e;
+    margin-right: auto;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-logo {
+    width: 3vw;
+    min-width: 30px;
+    height: auto;
+    max-width: 100%;
+}
+
+footer > .footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-div > div {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+}
+
+.footer-div h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #38d2f0;
+}
+
+.footer-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-div li {
+    margin: 0.5rem 0;
+}
+
+.footer-div li a {
+    color: lightgray;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.footer-div li a:hover {
+    color: #3a86c3;
+}
+
+/* Main Content */
+main {
+    min-height: calc(100vh - 80px - 300px);
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containerLayout1 {
+        padding: 0 1rem;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .search-container {
+        order: 3;
+        flex: 100%;
+        margin-top: 1rem;
+    }
+
+    .header-left, .header-right {
+        flex: auto;
+    }
+
+    .dropdown {
+        right: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .footer-div > div {
+        min-width: 150px;
+    }
+}

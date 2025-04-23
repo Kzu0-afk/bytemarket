@@ -1,0 +1,174 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+.modal-box {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.sign-up-credentials {
+    background-color: #fff;
+    color: #000000;
+}
+
+/*Date of Birth*/
+.sign-up-credentialsDOB {
+    background-color: #fff;
+    color: #000000;
+
+}
+
+.paragraphDOB {
+    margin-top:-3px;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.modal-box .back-arrow {
+    background-color: #212850;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+}
+
+.login-text {
+    color: #000000;
+}
+
+.login-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: -10px;
+}
+
+.modal-header {
+    margin-bottom: 1.5rem;
+}
+
+.modal-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+form input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.show-password {
+    text-align: left;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.next-button{
+    background-color: #212850;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.next-button:hover {
+    background-color: #29466c;
+    transform: translateY(-2px);
+}
+
+.submit-button {
+    background-color: #212850;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Change the font-family value */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #3e597f;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+.password-requirements p {
+  font-size: 0.9em;
+  margin: 2px 0;
+  color: #000000;
+  text-align: left;
+}
+
+.password-requirements .valid {
+  color: green;
+}
+
+.password-requirements .invalid {
+  color: red;
+  text-align: left;
+}
+.validation-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
